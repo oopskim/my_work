@@ -1,0 +1,131 @@
+@font-face {
+	font-family: 'MyFont';
+	src: url(../common/font/MPLUSRounded1c-Bold.ttf);
+}
+
+body {
+    margin:0;
+	font-family: MyFont;
+}
+#header{
+    width:1081px;
+    /* background-color: #f8c8ea; */
+    margin: 0 auto;
+    border-bottom: 10px solid #de1da4;
+}
+#header > ul{
+    font-size: 0;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    height:61px;
+}
+/* headerメニュ */
+#header > ul > li{
+    cursor: pointer;
+    font-size:16px;
+    text-align: center;
+    display: inline-block;
+    width:calc(1076px/4);
+    height:60px;
+    line-height: 61px;
+    border:1px solid #de1da4;
+    margin:0 -1px 0 0;
+}
+#header > ul > li:hover{
+    font-size: 25px;
+    line-height: 54px;
+    text-shadow: 1px 2px 6px black;
+    color:white;
+    background-color: #de1da4;
+}
+#dairy_view{
+    background: url("images/diary_bg.png") no-repeat 0 0px;
+    background-position: 70px 10px;
+    background-size: 80%;
+    transition: 1s;
+}
+#dairy_view:hover{
+    background-position: 70px -40px;
+}
+#graph_view{
+    background: url("images/bunseki.png") no-repeat 0 0px;
+    background-position: 130px -20px;
+    background-size: 60%;
+    transition: 1s;
+}
+#graph_view:hover{
+    background-position: 40px -40px;
+    background-size: 90%;
+}
+#family_map{
+    background: url("images/relationship.png") no-repeat 0 0px;
+    background-position: -50px -20px;
+    background-size: 80%;
+    transition: 1s;
+}
+#family_map:hover{
+    background-position: -60px -50px;
+    background-size: 70%;
+}
+#invest_view{
+    background: url("images/invest.png") no-repeat 0 0px;
+    background-position: 160px 20px;
+    background-size: 70%;
+    transition: 1s;
+}
+#invest_view:hover{
+    background-position: 110px -20px;
+    background-size: 80%;
+}
+#navi_menu_box a{
+    width:100%;
+    height:100%;
+    color:black;
+    display: inline-block;
+    text-decoration: none;
+}
+#navi_menu_box a:hover{
+    color:white;
+}
+#main_container{
+    width:1100px;
+    margin: 0 auto;
+}
+#menu_arrow_box{
+    position: relative;
+    width:1080px;
+    margin: 0 auto;
+}
+#menu_arrow{
+    position: absolute;
+    border-top: 10px solid #de1da4;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid transparent;
+}
+/* ページネーション */
+#pagination_box{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+#pagination_box a{
+    margin:0 2px;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    width:50px;
+    border: 1px solid #999;
+}
+#pagination_box a:hover{
+    background-color: #f8c8ea;
+}
+.ui-dialog-titlebar{
+    text-align: center;
+    background-color: #de1da4 !important;
+    color:white !important;
+    border-radius: 5px;
+}

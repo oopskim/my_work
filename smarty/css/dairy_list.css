@@ -1,0 +1,239 @@
+@font-face {
+	font-family: 'MyFont';
+	src: url(../common/font/MPLUSRounded1c-Bold.ttf);
+}
+#menu_arrow{
+    left:400px;
+}
+body {
+    margin:0;
+	font-family: MyFont;
+}
+#item_box{
+    margin: 10px;
+    border-collapse: collapse;
+}
+#item_box tr th{
+    color: white;
+    padding:3px;
+    background-color: #de1da4;
+    border-bottom: 2px solid black;
+}
+#item_box tr th:first-child{
+    border-top-left-radius: 5px;
+}
+#item_box tr th:last-child{
+    border-top-right-radius: 5px;
+}
+#item_box tr td{
+    border-bottom: 1px dotted #999;
+    padding:3px;
+}
+#item_box tr:hover{
+    background-color: #ffeaf9;
+}
+.list_cate{
+    text-align: center;
+    width:70px;
+}
+.list_memo{
+    width:430px;
+}
+.cate_txt{
+    color:white;
+    padding:0 5px;
+    border-radius: 5px;
+    background-color: lightcoral;
+}
+.list_title{
+    width:280px;
+}
+#add_item_btn{
+    float: right;
+    border: none;
+    background-color: #de1da4;
+    color:white;
+    width:200px;
+    padding:10px;
+    cursor: pointer;
+}
+#add_item_btn:hover{
+    background-color: #9e1675;
+}
+#add_item_btn:hover span{
+    padding-right:25px;
+}
+#add_item_btn:hover span:after{
+    opacity: 1;
+    right:0;
+}
+#add_item_btn span{
+    font-size:18px;
+    display: inline-block;
+    transition: 0.5s;
+    position: relative;
+}
+#add_item_btn span:after{
+    padding-top:3px;
+    content: '\00BB';
+    position: absolute;
+    opacity: 0;
+    right:-20px;
+    top:0;
+    transition: 0.5s;
+}
+#sort_label{margin-right: 5px;}
+.alert{
+    border:2px solid red;
+}
+#sorting{
+    background-color:cornsilk;
+    float: left;
+    border:1px solid #999;
+    border-radius: 5px;
+    width:200px;
+    padding:8px;
+    margin-left: 10px;
+}
+/* &#9660; */
+#sort_label::after{
+    content: " \025bc";
+}
+
+#disp_btn{
+    margin-left:10px;
+    float: left;
+    padding-top:2px;
+}
+#disp_btn>img{
+    border-radius: 3px;
+    padding:3px;
+    border:1px solid #999;
+}
+#add_item_menu{
+    height:50px;
+    margin-right:10px;
+    margin-top:30px;
+}
+/* ボタン共通 */
+.btn{
+    border:1px solid #999;
+    border-radius: 7px;
+    font-size:16px !important;
+}
+.item_content{
+    height:40px;
+    overflow: hidden;  
+    text-overflow: ellipsis;  
+    -webkit-text-overflow: ellipsis;  
+    -o-text-overflow: ellipsis;  
+}
+table{
+    font-family: MyFont;
+}
+#edit_modal > table{
+    border-collapse: collapse;
+    width: 100%; /* 幅 */
+}
+#edit_modal > table td:first-child{
+    font-size: 14px;
+    width:20%;
+}
+#edit_modal > table td:first-child::before{
+    padding-right:5px;
+    color:#de1da4;
+    content: "■";
+}
+.screen > img, #img_view > img{
+    border-radius: 10px;
+    width: 233px;
+    height:163px;
+}
+#img_view > img{
+    display: block;
+}
+/* button配置ボックス */
+#button_box{
+    margin-top:10px;
+    text-align: right;
+}
+#button_box > button{
+    width:150px;
+    margin: 0 5px;
+}
+#update_btn{
+    color:white;
+    background-color: dodgerblue;
+}
+#update_btn{
+    border:1px solid #999;
+}
+.ui-tooltip, .arrow:after {
+    background: #de1da4;
+    border: 2px solid white;
+}
+.ui-tooltip {
+    padding: 10px 20px;
+    color: white;
+    border-radius: 20px;
+    font: bold 14px "Helvetica Neue", Sans-Serif;
+    text-transform: uppercase;
+    box-shadow: 3 3 10px black;
+}
+.arrow {
+    width: 70px;
+    height: 16px;
+    overflow: hidden;
+    position: absolute;
+    left: 50%;
+    margin-left: -35px;
+    bottom: -16px;
+}
+.arrow.top {
+    top: -16px;
+    bottom: auto;
+}
+.arrow.left {
+    left: 20%;
+}
+.arrow:after {
+    content: "";
+    position: absolute;
+    left: 20px;
+    top: -20px;
+    width: 25px;
+    height: 25px;
+    box-shadow: 6px 5px 9px -9px black;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.arrow.top:after {
+    bottom: -20px;
+    top: auto;
+}
+.date_css{
+    color:#9e1675;
+}
+.row_btn{
+    border:0;
+    width:50px;
+    border-radius: 5px;    
+}
+.delete_item{
+    cursor: pointer;
+    color:white;
+    background-color: #de1da4;
+}
+.edit_btn{
+    cursor: pointer;
+    color:white;
+    background-color: #0064b6;
+}
+/* データがない時の警告メッセージ */
+#no_data{
+    text-align: center;
+}
+#dialog_title{
+    width:438px;
+}

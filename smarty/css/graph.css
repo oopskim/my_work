@@ -1,0 +1,85 @@
+#content_box{
+    display: inline-block;
+    margin: 30px 10px 0px 10px;
+}
+#menu_arrow{
+    right:120px;
+}
+.item_title{
+    font-size:20px;
+    padding:5px;
+    border-top-left-radius: 5px;
+    border-left:20px solid rgb(211, 32, 142);
+    border-bottom:1px solid #999;
+    margin:10px 0;
+}
+#month_selector, #fx_month_selector{
+    height:30px;
+    margin-left:10px;
+    font-size: 16px;
+}
+#investCalendar{
+    display: inline-block;
+    margin-bottom: 20px;
+}
+#investCalendar ul{
+    margin:0;
+    padding:0;
+}
+#investCalendar ul li{
+    width:148px;
+    border-radius: 5px;
+    overflow:hidden;
+    float: left;
+    margin:2px;
+}
+.week_title{
+    text-align: center;
+    height:30px;
+    line-height: 30px;
+    border:1px solid #999;
+    background-color: rgb(219, 242, 255);
+}
+.week_day{
+    height:60px;
+    border:1px solid #999;
+}
+.week_day:nth-child(7n){
+    background-color:rgb(236, 236, 255);
+}
+.week_day:nth-child(7n+1){
+    background-color:rgb(253, 232, 232);
+}
+.no_data{
+    border:0;
+    padding:1px;
+}
+.cal_day{
+    display: inline-block;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 0 5px;
+    color:white;
+    background-color: rgb(211, 32, 142);
+}
+.cal_amount_box{
+    text-align: right;
+}
+
+.cal_amount{
+    font-size: 20px;
+    padding:3px;
+}
+.cal_amount::after{
+    font-size:10px;
+    content: ' 円';
+}
+.day_sum_plus{
+    color:red;
+}
+.day_sum_min{
+    color:rgb(0, 0, 148);
+}
+.today_css{
+    background-color: lightgoldenrodyellow;
+}

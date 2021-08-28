@@ -1,0 +1,28 @@
+#content_box{
+    border: 1px solid #999;
+    border-radius: 5px;
+    margin: 30px 10px 0px 10px;
+    position: relative;
+    height:300px;
+}
+#menu_arrow{
+    left:150px;
+}
+.person_box{
+    color:white;
+    border-radius: 5px;
+    background-color: tomato;
+    width:100px;
+    display: inline-block;
+    padding:10px;
+    position: absolute;
+    text-align: center;
+}
+#xxxx{
+    margin-left:100px;
+    margin-bottom:100px;
+}
+.delete_soon{
+    width:300px;
+    border:1px solid red;
+}

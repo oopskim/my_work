@@ -1,0 +1,316 @@
+@font-face {
+	font-family: 'MyFont';
+	src: url(../common/font/MPLUSRounded1c-Bold.ttf);
+}
+
+body {
+    margin:0;
+	font-family: MyFont;
+}
+h1{
+    font-size:17px;
+    margin: 0;
+    position: relative;
+    top:-5px;
+}
+h3{
+    margin: 5px 0;
+    font-size: 16px;
+    color:purple;
+}
+#item_box{
+    display: inline-block;
+    list-style: none;
+    font-size: 0;
+    padding:0;
+    margin: 0 auto;
+}
+#item_box > li{
+    display: inline-block;
+    width:233px;
+    padding:10px;
+    margin: 10px;
+    font-size:12px;
+    border:1px solid #999;
+    border-radius: 10px;
+}
+.content_box{
+    position: relative;
+}
+.content_box > p{
+    margin: 0;
+}
+.screen > img, #img_view > img{
+    border-radius: 10px;
+    width: 233px;
+    height:163px;
+}
+#img_view > img{
+    display: block;
+}
+#item_box > li{
+    box-shadow: 3px 3px 1px 1px rgba(90, 90, 90, 0.3);
+}
+#item_box > li .screen,
+#item_box > li .item_title,
+#item_box > li .item_content{
+    display: block;
+    width:auto;
+    position: relative;
+    word-break: break-word;
+}
+.item_title{
+    font-size: 16px;
+    white-space: nowrap;  
+    overflow: hidden;  
+    text-overflow: ellipsis;  
+    -webkit-text-overflow: ellipsis;  
+    -o-text-overflow: ellipsis;
+    border-bottom: 1px dotted #666;
+}
+.item_content{
+    height:80px;
+    overflow: hidden;  
+    text-overflow: ellipsis;  
+    -webkit-text-overflow: ellipsis;  
+    -o-text-overflow: ellipsis;  
+}
+.edit_btn_box{
+    position: relative;
+    height:20px;
+}
+.edit_btn{
+    font-weight:bold;
+    cursor: pointer;
+    height:20px;
+    padding:5px;
+    width:50px;
+    right:-10px;
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position: absolute;
+    color:white;
+    background-color: #de1da4;
+}
+.edit_btn:hover{
+    box-shadow: 3px 3px 1px 1px rgba(0,0,0,0.4) inset;
+    transform: translate(1px, 1px);
+}
+li.item:hover{
+    background-color:mistyrose;
+}
+.delete_item{
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    top:-45px;
+    left:100%;
+    width: 20px;
+    height: 20px;
+    background: #333; 
+    border-radius: 100%;
+    box-shadow: 2px 2px 1px 1px rgba(90, 90, 90, 0.3);
+}
+.delete_item::before, .delete_item::after{
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    right: 40%;
+    width: 2px; /* 棒の幅（太さ）*/
+    height: 15px; /* 棒の高さ */
+    background:white;
+    border-radius: 2.5px;
+}
+.delete_item::before {
+    transform: translate(-50%,-50%) rotate(45deg);
+}
+
+.delete_item::after {
+    transform: translate(-50%,-50%) rotate(-45deg);
+}
+.cate_icon{
+    color:white;
+    padding:0 5px;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+/* dialog タイトル */
+.input_title{
+    width:150px;
+    display: inline-block;
+    border:1px solid red;
+}
+.input_contents{
+    display: inline-block;
+    width:400px;
+}
+table{
+    font-family: MyFont;
+}
+#edit_modal > table{
+    border-collapse: collapse;
+    width: 100%; /* 幅 */
+}
+#edit_modal > table td:first-child{
+    font-size: 14px;
+    width:20%;
+}
+#edit_modal > table td:first-child::before{
+    padding-right:5px;
+    color:#de1da4;
+    content: "■";
+}
+#dialog_title{
+    width:438px;
+}
+#category_select > select{
+    width:200px;
+}
+/* button配置ボックス */
+#button_box{
+    margin-top:10px;
+    text-align: right;
+}
+#button_box > button{
+    width:150px;
+    margin: 0 5px;
+}
+#update_btn{
+    color:white;
+    background-color: dodgerblue;
+}
+#update_btn{
+    border:1px solid #999;
+}
+/* ボタン共通 */
+.btn{
+    border:1px solid #999;
+    border-radius: 7px;
+    font-size:16px !important;
+}
+/* sorting label */
+#sort_label{margin-right: 5px;}
+.alert{
+    border:2px solid red;
+}
+#sorting{
+    background-color:cornsilk;
+    float: left;
+    border:1px solid #999;
+    border-radius: 5px;
+    width:200px;
+    padding:8px;
+    margin-left: 10px;
+}
+/* &#9660; */
+#sort_label::after{
+    content: " \025bc";
+}
+#disp_btn{
+    margin-left:10px;
+    float: left;
+    padding-top:2px;
+}
+#disp_btn>img{
+    border-radius: 3px;
+    padding:3px;
+    border:1px solid #999;
+}
+#add_item_btn{
+    float: right;
+    border: none;
+    background-color: #de1da4;
+    color:white;
+    width:200px;
+    padding:10px;
+    cursor: pointer;
+}
+#add_item_btn:hover{
+    background-color: #9e1675;
+}
+#add_item_btn:hover span{
+    padding-right:25px;
+}
+#add_item_btn:hover span:after{
+    opacity: 1;
+    right:0;
+}
+#add_item_btn span{
+    font-size:18px;
+    display: inline-block;
+    transition: 0.5s;
+    position: relative;
+}
+#add_item_btn span:after{
+    padding-top:3px;
+    content: '\00BB';
+    position: absolute;
+    opacity: 0;
+    right:-20px;
+    top:0;
+    transition: 0.5s;
+}
+#add_item_menu{
+    height:50px;
+    margin-right:10px;
+    margin-top:30px;
+}
+.ui-tooltip, .arrow:after {
+    background: #de1da4;
+    border: 2px solid white;
+}
+.ui-tooltip {
+    padding: 10px 20px;
+    color: white;
+    border-radius: 20px;
+    font: bold 14px "Helvetica Neue", Sans-Serif;
+    text-transform: uppercase;
+    box-shadow: 3 3 10px black;
+}
+.arrow {
+    width: 70px;
+    height: 16px;
+    overflow: hidden;
+    position: absolute;
+    left: 50%;
+    margin-left: -35px;
+    bottom: -16px;
+}
+.arrow.top {
+    top: -16px;
+    bottom: auto;
+}
+.arrow.left {
+    left: 20%;
+}
+.arrow:after {
+    content: "";
+    position: absolute;
+    left: 20px;
+    top: -20px;
+    width: 25px;
+    height: 25px;
+    box-shadow: 6px 5px 9px -9px black;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.arrow.top:after {
+    bottom: -20px;
+    top: auto;
+}
+.top_menu{
+    display: inline-block;
+}
+#cate_sort{
+    width:100px;
+}
+/* データがない時の警告メッセージ */
+#no_data{
+    text-align: center;
+}
+#menu_arrow{
+    left:400px;
+}

@@ -1,0 +1,12 @@
+td{padding:5px;}
+#pagination_box a{
+    display: inline-block; 
+    width:50px; 
+    padding:5px; 
+    border:1px solid #999;
+    text-align: center;
+}
+#pagination_box a:hover{
+    background-color: lightblue;
+}
+.active{background-color: lightpink;}

@@ -1,0 +1,97 @@
+body{
+    padding:0;
+    margin:0;
+}
+#main_container{
+    padding:10px;
+}
+#main_container table{
+    border-collapse: collapse;
+    border:1px solid #333;
+}
+#list_header table{
+    position: absolute;
+    background-color: lemonchiffon;
+}
+
+#list_contents{
+    height:500px;
+    overflow-y: auto;
+}
+#list_contents table{
+    margin-top: 30px;
+}
+#main_container table tr td{
+    font-size: 12px;
+    padding:5px;
+    text-align: center;
+}
+/* カテゴリ */
+#main_container table tr td:nth-child(1){
+    width:70px;
+}
+/* イベント名 */
+#main_container table tr td:nth-child(2){
+    width:100px;
+}
+/* 部店コード */
+#main_container table tr td:nth-child(3){
+    width:70px;
+}
+/* 部署 */
+#main_container table tr td:nth-child(4){
+    width:70px;
+}
+/* 年齢 */
+#main_container table tr td:nth-child(5){
+    width:50px;
+}
+/* 性別 */
+#main_container table tr td:nth-child(6){
+    width:50px;
+}
+/* メモ */
+#main_container table tr td:nth-child(7){
+    width:200px;
+}
+/* イメージファイル */
+#main_container table tr td:nth-child(8){
+    width:100px;
+}
+/* 編入、削除 */
+#main_container table tr td:nth-child(9), #main_container table tr td:nth-child(10){
+    width:50px;
+}
+/* ボタン共通 */
+.btn_css{
+    width:50px;
+    padding:0px 5px;
+}
+/* 編集ボタン */
+.edit{
+    background-color: lightcyan;
+}
+/* 削除ボタン */
+.delete{
+    background-color: lightcoral;
+}
+/* dialog */
+#disp_view{
+    display: none;
+}
+.btn_box{
+    width:inherit;
+    text-align: right;
+    margin-right:10px;
+}
+.ui-dialog-titlebar{
+    border-radius: 10px;
+    background-color: #b32038 !important;
+}
+/* dialog */
+#disp_view table tr td:first-child{
+    width:100px;
+}
+#list_title table tr td:nth-child(1){
+    background-color: red;
+}
