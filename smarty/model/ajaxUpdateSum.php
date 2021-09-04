@@ -1,5 +1,6 @@
 <?php
 require_once('../common/DatabaseUtil.php');
+require_once('../common/debug/debugger.php');
 $pdo=DatabaseUtil::connect();
 $daily = date('Y-m-d');
 // echo json_encode($ins_date);
@@ -19,6 +20,8 @@ $sql="SELECT
             FROM
                 planning_sheet.invest) as total_amount";
 $stmt=$pdo->prepare($sql);
+//debugger::_debug($sql);
+
 $stmt->execute();
 $sumResult=$stmt->fetch(PDO::FETCH_ASSOC);
 echo json_encode($sumResult);
